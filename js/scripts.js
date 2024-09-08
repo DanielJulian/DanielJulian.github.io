@@ -288,7 +288,30 @@ const chicos = [
 ];
 var dataTable;
 
-const elegido = chicos[Math.floor(Math.random() * chicos.length)];
+
+// Basically returns a unique item from the list each day of the year
+function getRandomItemFromList(chicos) {
+  // Get the current date
+  const today = new Date();
+
+  // Get the day of the year (1-365 or 366)
+  const start = new Date(today.getFullYear(), 0, 0);
+  const diff = today - start;
+  const oneDay = 1000 * 60 * 60 * 24;
+  const dayOfYear = Math.floor(diff / oneDay);
+
+  // Simple seed-like approach using the dayOfYear
+  const seed = dayOfYear;
+
+  // Use the seed to get a "random" index
+  const index = seed % chicos.length;
+
+  // Return the item from the list
+  return chicos[index];
+}
+
+
+const elegido = getRandomItemFromList(chicos)
 
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
