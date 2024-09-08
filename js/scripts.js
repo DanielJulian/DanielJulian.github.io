@@ -187,7 +187,7 @@ const chicos = [
         "lore": "esta mimosho"
     },
     {
-        "name": "Piox",
+        "name": "Pioox",
         "region": "wilde",
         "trabaja": "si",
         "pelo": "si",
