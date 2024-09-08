@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    background-image: url("../assets/img/la_ultima_cena.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Autocomplete CSS */
+
+#autocomplete {
+    width: 300px;
+    padding: 7px;
+    text-align: left;
+}
+
+.autocomplete-suggestions {
+    text-align: left;
+    border: 1px solid #999;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #FFF;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 5px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.autocomplete-selected {
+    background: #F0F0F0;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #3399FF;
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+
+/* Finish Autocomplete CSS */
+
+th {
+    text-align: center !important;
+}
+
+td {
+    text-align: center !important;
+}
