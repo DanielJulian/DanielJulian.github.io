@@ -373,14 +373,10 @@ function addRow(chico) {
             chico['es_gil']
         ])
         .draw(false);
-    console.log(row)
     $(row).find('td:nth-child(4)').addClass('color:green'); // PlayerA color
 }
 
 $(document).ready(function () {
-
     initializeAutocomplete();
-
     datatable = initializeGuessTable();
-
 })
