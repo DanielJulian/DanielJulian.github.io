@@ -290,9 +290,8 @@ var dataTable;
 
 
 // Basically returns a unique item from the list each day of the year
-function getRandomItemFromList(chicos) {
-  // Get the current date
-  const today = new Date();
+function getElegidoParaFecha(chicos, fecha) {
+  const today = fecha;
 
   // Get the day of the year (1-365 or 366)
   const start = new Date(today.getFullYear(), 0, 0);
@@ -311,7 +310,7 @@ function getRandomItemFromList(chicos) {
 }
 
 
-const elegido = getRandomItemFromList(chicos)
+const elegido = getElegidoParaFecha(chicos, new Date())
 
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
@@ -350,7 +349,6 @@ function initializeGuessTable() {
         }
     });
 }
-
 
 function verify(expected, actual, row, idx) {
     if (expected == actual) {
@@ -399,7 +397,16 @@ function addRow(chico) {
     $(row).find('td:nth-child(4)').addClass('color:green'); // PlayerA color
 }
 
+function getAutistaDeAyer() {
+    var date = new Date();
+    date.setDate(date.getDate() - 1);
+    let elegidoAyer = getElegidoParaFecha(chicos, date)
+    return "El autista de ayer fue " + elegidoAyer['name'];
+}
+
 $(document).ready(function () {
     initializeAutocomplete();
     datatable = initializeGuessTable();
+
+    $("#autista_de_ayer").text(getAutistaDeAyer())
 })
