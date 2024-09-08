@@ -30,10 +30,13 @@
         <img src="assets/img/councildle.jpg" width="200" height="200">
     </div>
     <div class="container mt-5">
-
         <input type="text" name="country" id="autocomplete" placeholder="Adivina el autista de hoy" style="border-radius: 1em;"/>
-
-
+    </div>
+    <div class="container mt-5">
+        <button type="button" class="btn btn-info" onclick="mostrarPista()">Pedir pista</button>
+        <p id="pista" style="color:white"></p>
+    </div>
+    <div class="container mt-5">
         <table id="guesstable" class="display" style="width:100%; display: none">
             <thead>
                 <tr>

@@ -410,3 +410,8 @@ $(document).ready(function () {
 
     $("#autista_de_ayer").text(getAutistaDeAyer())
 })
+
+
+function mostrarPista() {
+    $("#pista").text(elegido['lore'])
+}
