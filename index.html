@@ -27,36 +27,60 @@
 </head>
 <body>
     <div class="container mt-5">
-        <img src="assets/img/councildle.jpg" width="200" height="200">
+        <img src="assets/img/councildle.jpeg" width="200" height="200">
     </div>
-    <div class="container mt-5">
-        <input type="text" name="country" id="autocomplete" placeholder="Adivina el autista de hoy" style="border-radius: 1em;"/>
-    </div>
-    <div class="container mt-5">
+    <div class="container mt-5" style="border: 0.2em solid #ffffff;">
+        <h4 style="color:white; margin-top: 1em;">Adivina el autista</h4>
+        <input type="text" name="country" id="autocomplete" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
+
         <button type="button" class="btn btn-info" onclick="mostrarPista()">Pedir pista</button>
         <p id="pista" style="color:white"></p>
+
+        <div class="container mt-5" >
+            <table id="guesstable" class="display" style="width:100%; display: none">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Region</th>
+                        <th>Trabaja</th>
+                        <th>Pelo</th>
+                        <th>Color de piel</th>
+                        <th>Habilidad LoL</th>
+                        <th>Habilidad CS</th>
+                        <th>Gil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-5">
+            <h4 id="autista_de_ayer" style="color:white"></h4>
+        </div>
     </div>
-    <div class="container mt-5">
-        <table id="guesstable" class="display" style="width:100%; display: none">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Region</th>
-                    <th>Trabaja</th>
-                    <th>Pelo</th>
-                    <th>Color de piel</th>
-                    <th>Habilidad LoL</th>
-                    <th>Habilidad CS</th>
-                    <th>Gil</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+
+    <div class="container mt-5" style="border: 0.2em solid #ffffff;">
+        <h4 style="color:white; margin-top: 1em;">¿Quién dijo la frase?</h4>
+        <p id="frase_hoy" style="color:white;"></p>
+        <input type="text" name="country" id="autocomplete_frase" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
+        <div class="container mt-5" >
+            <table id="guesstable_frase" class="display" style="width:100%; display: none">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-5">
+            <h4 id="frase_de_ayer" style="color:white"></h4>
+        </div>
     </div>
-    <div class="container mt-5">
-        <h4 id="autista_de_ayer" style="color:white"></h4>
-    </div>
+
 </body>
 </html>
 

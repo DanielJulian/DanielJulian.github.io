@@ -8,7 +8,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "roba novias"
+        "lore": "roba novias",
+        "frases": ["te puse", "tas jugando de reojo maxi, eh, la concha de tu madre"]
     },
     {
         "name": "Ima",
@@ -19,7 +20,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "no se sabe si es pelado"
+        "lore": "no se sabe si es pelado",
+        "frases": ["segui ehg"]
     },
     {
         "name": "Kener",
@@ -30,7 +32,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "el nene en la nena"
+        "lore": "el nene en la nena",
+        "frases": ["hijo de pootaah", "yo no me garcho a nadie.. mi jermu me mira", "puerta abierta"]
     },
     {
         "name": "Juanma",
@@ -41,7 +44,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "bruiser"
+        "lore": "bruiser",
+        "frases": ["vo so loco o te hace", "eri pli", "eee medio ct b cache"]
     },
     {
         "name": "Eri",
@@ -52,7 +56,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "milf"
+        "lore": "milf",
+        "frases": ["Queres pasta base?"]
     },
     {
         "name": "Crilzo",
@@ -63,7 +68,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "bizco"
+        "lore": "bizco",
+        "frases": ["mmmmm"]
     },
     {
         "name": "Calippy",
@@ -74,7 +80,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "crazy taco"
+        "lore": "crazy taco",
+        "frases": ["OugHhHGHHhHhgg"]
     },
     {
         "name": "Fede",
@@ -85,7 +92,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "bueno",
         "es_gil": "no",
-        "lore": "buena ceja"
+        "lore": "buena ceja",
+        "frases": ["kasante es el negro mas hot"]
     },
     {
         "name": "Nabu",
@@ -96,7 +104,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "average",
         "es_gil": "no",
-        "lore": "ruido de encendedor"
+        "lore": "ruido de encendedor",
+        "frases": ["es todo porro, no tiene filtro"]
     },
     {
         "name": "Dano",
@@ -107,7 +116,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "bueno",
         "es_gil": "no",
-        "lore": "maestro splinter"
+        "lore": "maestro splinter",
+        "frases": ["si apuntas mejor, si tenes mas armas, si te moves mas y si matas mas, tenes mas chances de ganar", "pichon"]
     },
     {
         "name": "Sighma",
@@ -118,7 +128,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "ilegal es poco"
+        "lore": "ilegal es poco",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Agu",
@@ -129,7 +140,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "es buen loco"
+        "lore": "es buen loco",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Pani",
@@ -140,7 +152,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "se pinta las uñas y le entra a la prima"
+        "lore": "se pinta las uñas y le entra a la prima",
+        "frases": ["ciego te vas a quedar de tanta droga, enfermo", "y el mono? el mono esta en tu culo"]
     },
     {
         "name": "Dolla",
@@ -151,7 +164,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "chicito"
+        "lore": "chicito",
+        "frases": ["con vos? no gracia"]
     },
     {
         "name": "Chiru",
@@ -162,7 +176,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "tremendo autista"
+        "lore": "tremendo autista",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Tito",
@@ -173,7 +188,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "casi muere"
+        "lore": "casi muere",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Dyrude",
@@ -184,7 +200,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "esta mimosho"
+        "lore": "esta mimosho",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Pioox",
@@ -195,7 +212,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "le re cuesta"
+        "lore": "le re cuesta",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Ficha",
@@ -206,7 +224,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "acido"
+        "lore": "acido",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Kevin recke",
@@ -217,7 +236,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "fajaba a la jermu"
+        "lore": "fajaba a la jermu",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Gmauro",
@@ -228,7 +248,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "average",
         "es_gil": "no",
-        "lore": "gmauro"
+        "lore": "gmauro",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Mosta",
@@ -239,7 +260,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "tartamudea cuando se pone nervioso"
+        "lore": "tartamudea cuando se pone nervioso",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Nicuco",
@@ -250,7 +272,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "el terror de chicos y grandes"
+        "lore": "el terror de chicos y grandes",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Wailler",
@@ -261,7 +284,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "no se calla nunca"
+        "lore": "no se calla nunca",
+        "frases": ["fue fue fue", "ehh?ahhh", "te calentaste"]
     },
     {
         "name": "kIRAX",
@@ -272,7 +296,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "es facho"
+        "lore": "es facho",
+        "frases": ["No tiene frase"]
     },
     {
         "name": "Fran",
@@ -283,14 +308,16 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "dejo los souls para dedicarse a su falcon verde"
+        "lore": "dejo los souls para dedicarse a su falcon verde",
+        "frases": ["No tiene frase"]
     }
 ];
-var dataTable;
+var datatable;
+var datatableFrase;
 
 
 // Basically returns a unique item from the list each day of the year
-function getElegidoParaFecha(chicos, fecha) {
+function getElegidoParaFecha(chicos, fecha, offset = 0) {
   const today = fecha;
 
   // Get the day of the year (1-365 or 366)
@@ -300,7 +327,7 @@ function getElegidoParaFecha(chicos, fecha) {
   const dayOfYear = Math.floor(diff / oneDay);
 
   // Simple seed-like approach using the dayOfYear
-  const seed = dayOfYear;
+  const seed = dayOfYear + offset;
 
   // Use the seed to get a "random" index
   const index = seed % chicos.length;
@@ -311,6 +338,8 @@ function getElegidoParaFecha(chicos, fecha) {
 
 
 const elegido = getElegidoParaFecha(chicos, new Date())
+
+const elegido_frase = getElegidoParaFecha(chicos, new Date(), 10)
 
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
@@ -333,7 +362,24 @@ function initializeAutocomplete() {
             $('#autocomplete').val("")
 
             // Add the row to the table
-            addRow(ui.item.value)
+            addRowGuessAutista(ui.item.value)
+        },
+    });
+
+    $('#autocomplete_frase').autocomplete({
+        source: chicosArray,
+        lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
+            var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
+            return re.test(suggestion.value);
+        },
+        select: function (event, ui) {
+            event.preventDefault();
+
+            // Make the search bar empty
+            $('#autocomplete_frase').val("")
+
+            // Add the row to the table
+            addRowGuessFrase(ui.item.value)
         },
     });
 }
@@ -346,6 +392,18 @@ function initializeGuessTable() {
         searching: false,
         rowCallback: function(row, data, index) {
           rowCallback(row, data, index);
+        }
+    });
+}
+
+function initializeGuessTableFrase() {
+    return new DataTable('#guesstable_frase', {
+        info: false,
+        ordering: false,
+        paging: false,
+        searching: false,
+        rowCallback: function(row, data, index) {
+          rowCallbackFrase(row, data, index);
         }
     });
 }
@@ -378,10 +436,15 @@ function rowCallback(row, data, index) {
     verify(gil, elegido['es_gil'], row, 7);
 }
 
-function addRow(chico) {
+function rowCallbackFrase(row, data, index) {
+    let nombre = data[0];
+    verify(nombre, elegido_frase['name'], row, 0);
+}
+
+function addRowGuessAutista(chico) {
     $("#guesstable").show();
 
-    let row =datatable
+    datatable
         .row
         .add([
             chico['name'],
@@ -394,7 +457,16 @@ function addRow(chico) {
             chico['es_gil']
         ])
         .draw(false);
-    $(row).find('td:nth-child(4)').addClass('color:green'); // PlayerA color
+}
+
+function addRowGuessFrase(chico) {
+    $("#guesstable_frase").show();
+    datatableFrase
+        .row
+        .add([
+            chico['name']
+        ])
+        .draw(false);
 }
 
 function getAutistaDeAyer() {
@@ -404,11 +476,23 @@ function getAutistaDeAyer() {
     return "El autista de ayer fue " + elegidoAyer['name'];
 }
 
+function getFraseDeAyer() {
+    var date = new Date();
+    date.setDate(date.getDate() - 1);
+    let elegidoAyer = getElegidoParaFecha(chicos, date, 10)
+    let fraseAyer =  getElegidoParaFecha(elegidoAyer['frases'], date, 10)
+    return "Frase de ayer: " + fraseAyer;
+}
+
 $(document).ready(function () {
     initializeAutocomplete();
     datatable = initializeGuessTable();
+    datatableFrase = initializeGuessTableFrase();
 
-    $("#autista_de_ayer").text(getAutistaDeAyer())
+    $("#autista_de_ayer").text(getAutistaDeAyer());
+    $("#frase_de_ayer").text(getFraseDeAyer());
+
+    $("#frase_hoy").text(elegido_frase.frase);
 })
 
 
