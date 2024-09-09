@@ -15,6 +15,12 @@ body {
     text-align: left;
 }
 
+#autocomplete_frase {
+    width: 300px;
+    padding: 7px;
+    text-align: left;
+}
+
 .autocomplete-suggestions {
     text-align: left;
     border: 1px solid #999;
