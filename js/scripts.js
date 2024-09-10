@@ -510,7 +510,7 @@ const frase_hoy = getElegidoParaFecha(elegido_frase['frases'], new Date(), 10)
 const elegido_emoji = getElegidoParaFecha(emojis_chicos, new Date(), 20);
 var intentos_emoji = 0;
 
-var ultima_row = "";
+var ultima_row_emoji  = "";
 
 
 function initializeAutocomplete() {
