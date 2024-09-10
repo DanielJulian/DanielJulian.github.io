@@ -297,15 +297,15 @@ const frases_chicos = [
 {
    "name":"Ima",
    "frases":[
-      "segui ehg"
+      "Segui ehg"
    ]
 },
 {
    "name":"Kener",
    "frases":[
-      "hijo de pootaah",
-      "yo no me garcho a nadie.. mi jermu me mira",
-      "puerta abierta",
+      "Hijo de pootaah",
+      "Yo no me garcho a nadie.. mi jermu me mira",
+      "Puerta abierta",
       "El tio carlo",
       "Chogur con copos"
    ]
@@ -313,9 +313,9 @@ const frases_chicos = [
 {
    "name":"Juanma",
    "frases":[
-      "vo so loco o te hace",
-      "eri pli",
-      "eee medio ct b cache",
+      "Vo so loco o te hace",
+      "Eri pli",
+      "Eee medio ct b cache",
       "Tio carlo???"
    ]
 },
@@ -329,7 +329,7 @@ const frases_chicos = [
 {
    "name":"Crilzo",
    "frases":[
-      "nino vimo chico"
+      "Nino vimo chico"
    ]
 },
 {
@@ -341,34 +341,34 @@ const frases_chicos = [
 {
    "name":"Fede",
    "frases":[
-      "palermitano de mierda"
+      "Palermitano de mierda"
    ]
 },
 {
    "name":"Nabu",
    "frases":[
-      "es todo porro, no tiene filtro"
+      "Es todo porro, no tiene filtro"
    ]
 },
 {
    "name":"Dano",
    "frases":[
-      "si apuntas mejor, si tenes mas armas, si te moves mas y si matas mas, tenes mas chances de ganar",
-      "pichon",
-      "depue te plico"
+      "Si apuntas mejor, si tenes mas armas, si te moves mas y si matas mas, tenes mas chances de ganar",
+      "Pichon",
+      "Depue te plico"
    ]
 },
 {
    "name":"Pani",
    "frases":[
-      "ciego te vas a quedar de tanta droga, enfermo",
-      "y el mono? el mono esta en tu culo"
+      "Ciego te vas a quedar de tanta droga, enfermo",
+      "Y el mono? el mono esta en tu culo"
    ]
 },
 {
    "name":"Dolla",
    "frases":[
-      "con vos? no gracia",
+      "Con vos? no gracia",
       "Timagina",
       "Yo nunca te vi"
    ]
@@ -389,7 +389,7 @@ const frases_chicos = [
 {
    "name":"Mosta",
    "frases":[
-      "hijaaaaaa de putaaaa *se larga a llorar*"
+      "Hijaaaaaa de putaaaa *se larga a llorar*"
    ]
 },
 {
@@ -399,17 +399,24 @@ const frases_chicos = [
    ]
 },
 {
+   "name":"Tito",
+   "frases":[
+      "Jefe, hoy no voy",
+      "Que tan enfermo tenes que estar para violar a un hombre?"
+   ]
+},
+{
    "name":"Wailler",
    "frases":[
-      "fue fue fue",
-      "ehh?ahhh",
-      "te calentaste"
+      "Fue fue fue",
+      "Ehh?ahhh",
+      "Te calentaste"
    ]
 },
 {
    "name":"Mono",
    "frases":[
-      "como se llama la partida?"
+      "Como se llama la partida?"
    ]
 },
 {
@@ -418,6 +425,59 @@ const frases_chicos = [
       "Yo tambien uso el ak para matar"
    ]
 }]
+const emoticones_chicos = [
+
+    {
+        "name" : "Ima",
+        "icons": ["🫦","🧑‍🦲","🤑"]
+    },{
+        "name" : "Dano",
+        "icons": ["🐀","💸"]
+    },{
+        "name" : "Sighma",
+        "icons": ["🏦","🏋️","📹"]
+    },{
+        "name" : "Pani",
+        "icons": ["🤓","💅🏻","☝🏾","👨🏾‍🏫 ","😮‍💨"]
+    },{
+        "name" : "Agu",
+        "icons": ["🏋️","💅🏻","👨‍🦲 ","🇩🇪"]
+    },{
+        "name" : "Nabu",
+        "icons": ["❄️","🌱","👃"]
+    },{
+        "name" : "Fede",
+        "icons": ["📢","🦮","🤨"]
+    },{
+        "name" : "Roty",
+        "icons": ["🍜","😷","😮‍💨"]
+    },{
+        "name" : "Wailer",
+        "icons": ["🏋️","🏍️"]
+    },{
+        "name" : "Nico",
+        "icons": ["😡","☠️"]
+    },{
+        "name" : "Pioox",
+        "icons": ["😡","🏹"]
+    },{
+        "name" : "Mosta",
+        "icons": ["🛠️","💔 ","🔩","🇺🇦"]
+    },{
+        "name" : "Kener",
+        "icons": ["🥷","👱🏻"]
+    },{
+        "name" : "Mati",
+        "icons": ["🦷","🥰","🥭","🧸 "]
+    },{
+        "name" : "Tito",
+        "icons": ["🍫"]
+    }
+]
+
+const question_mark = "❓";
+
+
 
 var datatable;
 var datatableFrase;
@@ -551,6 +611,8 @@ function rowCallbackFrase(row, data, index) {
 
 function addRowGuessAutista(chico) {
     $("#guesstable").show();
+    $("#guesstable_parent").show();
+
 
     datatable
         .row
@@ -569,6 +631,7 @@ function addRowGuessAutista(chico) {
 
 function addRowGuessFrase(chico) {
     $("#guesstable_frase").show();
+    $("#guesstable_frase_parent").show();
     datatableFrase
         .row
         .add([
@@ -601,6 +664,8 @@ $(document).ready(function () {
     $("#frase_de_ayer").text(getFraseDeAyer());
 
     $("#frase_hoy").text(frase_hoy);
+
+    //$("#emojis").text(question_mark)
 })
 
 
