@@ -510,6 +510,8 @@ const frase_hoy = getElegidoParaFecha(elegido_frase['frases'], new Date(), 10)
 const elegido_emoji = getElegidoParaFecha(emojis_chicos, new Date(), 20);
 var intentos_emoji = 0;
 
+var ultima_row = "";
+
 
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
@@ -616,7 +618,10 @@ function initializeGuessTableEmoji() {
         paging: false,
         searching: false,
         rowCallback: function(row, data, index) {
-          rowCallbackEmoji(row, data, index);
+            if (ultima_row_emoji != row) { // Para evitar callbacks llamados dos veces
+                ultima_row_emoji = row;
+                rowCallbackEmoji(row, data, index);
+            }
         }
     });
 }
