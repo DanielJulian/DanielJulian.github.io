@@ -82,12 +82,14 @@
         </div>
     </div>
 
-    <div class="container mt-5" style="border: 0.2em solid #ffffff; display:none">
+    <div class="container mt-5" style="border: 0.2em solid #ffffff;">
         <h4 style="color:white; margin-top: 1em;">¿Qué autista describen estos emojis?</h4>
-        <p id="emojis" style="color:white;"></p>
-        <input type="text" id="autocomplete_frase" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
-        <div class="container mt-5" >
-            <table id="guesstable_frase" class="display" style="width:100%; display: none">
+        <p id="emojis" style="color:white; font-size: 2em;"></p>
+        <p style="color:white;">Cada intento desbloquea un emoji.</p>
+
+        <input type="text" id="autocomplete_emoji" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
+        <div class="container mt-5" id="guesstable_emoji_parent">
+            <table id="guesstable_emoji" class="display" style="width:100%; display: none">
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -99,7 +101,7 @@
         </div>
 
         <div class="container mt-5">
-            <h4 id="frase_de_ayer" style="color:white"></h4>
+            <h4 id="emoji_de_ayer" style="color:white"></h4>
         </div>
     </div>
 
