@@ -228,7 +228,7 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "average",
         "es_gil": "no",
-        "lore": "gmauro"
+        "lore": "Le chorio el nickname a eri en el lol"
     },
     {
         "name": "Mosta",
