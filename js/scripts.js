@@ -287,6 +287,6 @@ $(document).ready(function () {
 })
 
 
-function mostrarPista() {
+window.mostrarPista = function mostrarPista() {
     $("#pista").text(elegido['lore'])
 }
