@@ -1,11 +1,12 @@
 import { chicos } from "./data.js";
-import { getElegidoParaFecha, verify, verifyList } from "./utils.js"
+import { getElegidoParaFecha, verify, verifyList } from "./global.js"
 
 
+var ultima_row_dibujada  = "";
 var datatable;
 const elegido = getElegidoParaFecha(chicos, new Date());
-var intentos_clasico = 0;
-var ultima_row_dibujada  = "";
+export var intentos_clasico = 0;
+export var finished = false;
 
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
@@ -71,6 +72,8 @@ function initializeGuessTable() {
 }
 
 function rowCallback(row, data, index) {
+    intentos_clasico++;
+
     let nombre = data[0];
     let region = data[1];
     let trabaja = data[2];
@@ -81,18 +84,21 @@ function rowCallback(row, data, index) {
     let gil = data[7];
     let tribus = data[8].split("<br>");
 
-    verify(nombre, elegido['name'], row, 0);
-    verify(region, elegido['region'], row, 1);
-    verify(trabaja, elegido['trabaja'], row, 2);
-    verify(pelo, elegido['pelo'], row, 3);
-    verify(colorPiel, elegido['color_de_piel'], row, 4);
-    verify(lol, elegido['habilidad_lol'], row, 5);
-    verify(cs, elegido['habilidad_cs'], row, 6);
-    verify(gil, elegido['es_gil'], row, 7);
-    verifyList(tribus, elegido['tribus'], row, 8);
+    let asserted_list = []
 
-    intentos_clasico++;
-    console.log(intentos_clasico)
+    asserted_list.push(verify(nombre, elegido['name'], row, 0));
+    asserted_list.push(verify(region, elegido['region'], row, 1));
+    asserted_list.push(verify(trabaja, elegido['trabaja'], row, 2));
+    asserted_list.push(verify(pelo, elegido['pelo'], row, 3));
+    asserted_list.push(verify(colorPiel, elegido['color_de_piel'], row, 4));
+    asserted_list.push(verify(lol, elegido['habilidad_lol'], row, 5));
+    asserted_list.push(verify(cs, elegido['habilidad_cs'], row, 6));
+    asserted_list.push(verify(gil, elegido['es_gil'], row, 7));
+    asserted_list.push(verifyList(tribus, elegido['tribus'], row, 8));
+
+    if (asserted_list.every(Boolean)) { // If all asserts are true
+        finished = true;
+    }
 }
 
 function getAutistaDeAyer() {

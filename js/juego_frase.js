@@ -1,4 +1,4 @@
-import { getElegidoParaFecha, verify } from "./utils.js";
+import { getElegidoParaFecha, verify } from "./global.js";
 import { frases_chicos } from "./data.js";
 
 
@@ -6,7 +6,8 @@ var datatableFrase;
 var ultima_row_dibujada  = "";
 const elegido_frase = getElegidoParaFecha(frases_chicos, new Date(), 10)
 const frase_hoy = getElegidoParaFecha(elegido_frase['frases'], new Date(), 10)
-var intentos_frase = 0;
+export var intentos_frase = 0;
+export var finished = false;
 
 function initializeAutocomplete() {
     const chicosFrasesArray = frases_chicos.map(chico => {
@@ -66,7 +67,10 @@ function initializeGuessTableFrase() {
 function rowCallbackFrase(row, data, index) {
     intentos_frase++;
     let nombre = data[0];
-    verify(nombre, elegido_frase['name'], row, 0);
+    let asserted = verify(nombre, elegido_frase['name'], row, 0);
+    if (asserted) {
+        finished=true;
+    }
 }
 
 function getFraseDeAyer() {

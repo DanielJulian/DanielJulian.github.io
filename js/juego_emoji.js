@@ -1,10 +1,11 @@
 import { emojis_chicos } from "./data.js"
-import { getElegidoParaFecha, verify} from "./utils.js"
+import { getElegidoParaFecha, verify} from "./global.js"
 
 const question_mark = "❓";
 const elegido_emoji = getElegidoParaFecha(emojis_chicos, new Date(), 20);
 var datatableEmoji;
-var intentos_emoji = 0;
+export var intentos_emoji = 0;
+export var finished = false;
 
 var ultima_row_dibujada  = ""; // Para evitar callbacks llamados dos veces
 
@@ -50,13 +51,14 @@ function initializeGuessTableEmoji() {
 }
 
 function rowCallbackEmoji(row, data, index) {
+    intentos_emoji++;
     let nombre = data[0];
     let asserted = verify(nombre, elegido_emoji['name'], row, 0);
     if (!asserted) {
-        intentos_emoji++;
         drawEmojis();
     } else { // Si adivinó, dibujamos todos los emojis
         drawEmojis(true);
+        finished=true;
     }
 }
 
