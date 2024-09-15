@@ -3,9 +3,10 @@ import { frases_chicos } from "./data.js";
 
 
 var datatableFrase;
+var ultima_row_dibujada  = "";
 const elegido_frase = getElegidoParaFecha(frases_chicos, new Date(), 10)
 const frase_hoy = getElegidoParaFecha(elegido_frase['frases'], new Date(), 10)
-
+var intentos_frase = 0;
 
 function initializeAutocomplete() {
     const chicosFrasesArray = frases_chicos.map(chico => {
@@ -53,13 +54,17 @@ function initializeGuessTableFrase() {
         paging: false,
         searching: false,
         rowCallback: function(row, data, index) {
-          rowCallbackFrase(row, data, index);
+            if (ultima_row_dibujada !== row) {
+                ultima_row_dibujada = row;
+                rowCallbackFrase(row, data, index);
+            }
         }
     });
 }
 
 
 function rowCallbackFrase(row, data, index) {
+    intentos_frase++;
     let nombre = data[0];
     verify(nombre, elegido_frase['name'], row, 0);
 }

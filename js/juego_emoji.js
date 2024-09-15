@@ -6,7 +6,7 @@ const elegido_emoji = getElegidoParaFecha(emojis_chicos, new Date(), 20);
 var datatableEmoji;
 var intentos_emoji = 0;
 
-var ultima_row_emoji  = "";
+var ultima_row_dibujada  = ""; // Para evitar callbacks llamados dos veces
 
 function initializeAutocomplete() {
     const chicosEmojiArray = emojis_chicos.map(chico => {
@@ -41,8 +41,8 @@ function initializeGuessTableEmoji() {
         paging: false,
         searching: false,
         rowCallback: function(row, data, index) {
-            if (ultima_row_emoji != row) { // Para evitar callbacks llamados dos veces
-                ultima_row_emoji = row;
+            if (ultima_row_dibujada !== row) {
+                ultima_row_dibujada = row;
                 rowCallbackEmoji(row, data, index);
             }
         }

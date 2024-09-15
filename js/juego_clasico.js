@@ -3,7 +3,9 @@ import { getElegidoParaFecha, verify, verifyList } from "./utils.js"
 
 
 var datatable;
-const elegido = getElegidoParaFecha(chicos, new Date())
+const elegido = getElegidoParaFecha(chicos, new Date());
+var intentos_clasico = 0;
+var ultima_row_dibujada  = "";
 
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
@@ -60,7 +62,10 @@ function initializeGuessTable() {
         paging: false,
         searching: false,
         rowCallback: function(row, data, index) {
-          rowCallback(row, data, index);
+            if (ultima_row_dibujada !== row) {
+                ultima_row_dibujada = row;
+                rowCallback(row, data, index);
+            }
         }
     });
 }
@@ -84,7 +89,10 @@ function rowCallback(row, data, index) {
     verify(lol, elegido['habilidad_lol'], row, 5);
     verify(cs, elegido['habilidad_cs'], row, 6);
     verify(gil, elegido['es_gil'], row, 7);
-    verifyList(tribus, elegido['tribus'], row, 8)
+    verifyList(tribus, elegido['tribus'], row, 8);
+
+    intentos_clasico++;
+    console.log(intentos_clasico)
 }
 
 function getAutistaDeAyer() {
