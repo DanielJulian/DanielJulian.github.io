@@ -515,7 +515,8 @@ const emojis_chicos = [
     }
 ]
 
+const titulos = ["Chicodle", "Councildle", "Sidle", "Mogolicodle", "Tpucdle"]
 
 export {
-  chicos, frases_chicos, emojis_chicos
+  chicos, frases_chicos, emojis_chicos, titulos
 }

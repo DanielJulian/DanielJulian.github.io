@@ -1,5 +1,7 @@
+import { titulos } from "./data.js";
+
 // Returns a unique item from a list each day of the year - Deterministic
-export function getElegidoParaFecha(chicos, fecha, offset = 0) {
+export function getElegidoParaFecha(chicos, fecha = new Date(), offset = 0) {
   const today = fecha;
 
   // Get the day of the year (1-365 or 366)
@@ -49,3 +51,8 @@ export function verifyList(expected, actual, row, idx) {
         return false;
     }
 }
+
+
+$(document).ready(function () {
+    $("#titulo").text(getElegidoParaFecha(titulos))
+})
