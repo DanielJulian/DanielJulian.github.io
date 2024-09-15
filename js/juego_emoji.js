@@ -10,7 +10,7 @@ export var finished = false;
 var ultima_row_dibujada  = ""; // Para evitar callbacks llamados dos veces
 
 function initializeAutocomplete() {
-    const chicosEmojiArray = emojis_chicos.map(chico => {
+    var chicosEmojiArray = emojis_chicos.map(chico => {
         return {
             label: chico.name,
             value: chico
@@ -27,10 +27,17 @@ function initializeAutocomplete() {
             event.preventDefault();
 
             // Make the search bar empty
-            $('#autocomplete_emoji').val("")
+            $('#autocomplete_emoji').val("");
 
             // Add the row to the table
-            addRowGuessEmoji(ui.item.value)
+            addRowGuessEmoji(ui.item.value);
+
+
+            // Remove the selected item from the search bar
+            chicosEmojiArray = jQuery.grep(chicosEmojiArray, function(element) {
+                return element.value != ui.item.value;
+            });
+            $('#autocomplete_emoji').autocomplete('option', 'source', chicosEmojiArray);
         },
     });
 }

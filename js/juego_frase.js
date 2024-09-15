@@ -10,7 +10,7 @@ export var intentos_frase = 0;
 export var finished = false;
 
 function initializeAutocomplete() {
-    const chicosFrasesArray = frases_chicos.map(chico => {
+    var chicosFrasesArray = frases_chicos.map(chico => {
         return {
             label: chico.name,
             value: chico
@@ -31,6 +31,12 @@ function initializeAutocomplete() {
 
             // Add the row to the table
             addRowGuessFrase(ui.item.value)
+
+            // Remove the selected item from the search bar
+            chicosFrasesArray = jQuery.grep(chicosFrasesArray, function(element) {
+                return element.value != ui.item.value;
+            });
+            $('#autocomplete_frase').autocomplete('option', 'source', chicosFrasesArray);
         },
     });
 }

@@ -9,7 +9,7 @@ export var intentos_clasico = 0;
 export var finished = false;
 
 function initializeAutocomplete() {
-    const chicosArray = chicos.map(chico => {
+    var chicosArray = chicos.map(chico => {
         return {
             label: chico.name,
             value: chico
@@ -30,6 +30,12 @@ function initializeAutocomplete() {
 
             // Add the row to the table
             addRowGuessAutista(ui.item.value)
+
+            // Remove the selected item from the search bar
+            chicosArray = jQuery.grep(chicosArray, function(element) {
+                return element.value != ui.item.value;
+            });
+            $('#autocomplete').autocomplete('option', 'source', chicosArray);
         },
     });
 }
