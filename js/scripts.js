@@ -37,7 +37,6 @@ var intentos_emoji = 0;
 
 var ultima_row_emoji  = "";
 
-
 function initializeAutocomplete() {
     const chicosArray = chicos.map(chico => {
         return {
@@ -161,6 +160,28 @@ function verify(expected, actual, row, idx) {
     }
 }
 
+function verifyList(expected, actual, row, idx) {
+    let commonCounter = 0;
+    for (let i = 0; i < expected.length; i++) {
+        for (let j = 0; j < actual.length; j++) {
+            if (expected[i] === actual[j]) {
+                commonCounter++;
+            }
+        }
+    }
+
+    if (commonCounter === expected.length) {
+        $(row).find('td:eq(' + idx + ')').css('background-color', 'green');
+        return true;
+    } else if (commonCounter > 0) {
+        $(row).find('td:eq(' + idx + ')').css('background-color', 'orange');
+        return false;
+    } else {
+        $(row).find('td:eq(' + idx + ')').css('background-color', 'red');
+        return false;
+    }
+}
+
 function rowCallback(row, data, index) {
     let nombre = data[0];
     let region = data[1];
@@ -170,6 +191,7 @@ function rowCallback(row, data, index) {
     let lol = data[5];
     let cs = data[6];
     let gil = data[7];
+    let tribus = data[8].split("<br>");
 
     verify(nombre, elegido['name'], row, 0);
     verify(region, elegido['region'], row, 1);
@@ -179,6 +201,7 @@ function rowCallback(row, data, index) {
     verify(lol, elegido['habilidad_lol'], row, 5);
     verify(cs, elegido['habilidad_cs'], row, 6);
     verify(gil, elegido['es_gil'], row, 7);
+    verifyList(tribus, elegido['tribus'], row, 8)
 }
 
 function rowCallbackFrase(row, data, index) {
@@ -200,6 +223,7 @@ function addRowGuessAutista(chico) {
     $("#guesstable").show();
     $("#guesstable_parent").show();
 
+    let tribus = chico['tribus'].join("<br>")
 
     datatable
         .row
@@ -211,7 +235,8 @@ function addRowGuessAutista(chico) {
             chico['color_de_piel'],
             chico['habilidad_lol'],
             chico['habilidad_cs'],
-            chico['es_gil']
+            chico['es_gil'],
+            tribus
         ])
         .draw(false);
 }

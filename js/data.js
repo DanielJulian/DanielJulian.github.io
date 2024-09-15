@@ -8,7 +8,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "roba novias"
+        "lore": "roba novias",
+        "tribus":["Scammer","Roba-novias","Cebollas"]
     },
     {
         "name": "Ima",
@@ -19,7 +20,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "no se sabe si es pelado"
+        "lore": "no se sabe si es pelado",
+        "tribus":["Scammer","Autista","Tryhards"]
     },
     {
         "name": "Kener",
@@ -30,7 +32,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "el nene en la nena"
+        "lore": "el nene en la nena",
+        "tribus":["Roba-novias","Adicto","Misogino"]
     },
     {
         "name": "Juanma",
@@ -41,7 +44,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "bruiser"
+        "lore": "bruiser",
+        "tribus":["Muertos","Casuales","Misogino"]
     },
     {
         "name": "Eri",
@@ -52,7 +56,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "milf"
+        "lore": "milf",
+        "tribus":["Muertos","Laucha","Tryhards"]
     },
     {
         "name": "Crilzo",
@@ -63,7 +68,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "bizco"
+        "lore": "bizco",
+        "tribus":["Muertos","Malasos"]
     },
     {
         "name": "Calippy",
@@ -74,7 +80,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "crazy taco"
+        "lore": "crazy taco",
+        "tribus":["Muertos","Casuales","Malasos"]
     },
     {
         "name": "Fede",
@@ -85,7 +92,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "bueno",
         "es_gil": "no",
-        "lore": "buena ceja"
+        "lore": "buena ceja",
+        "tribus":["Casuales"]
     },
     {
         "name": "Nabu",
@@ -96,7 +104,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "average",
         "es_gil": "no",
-        "lore": "ruido de encendedor"
+        "lore": "ruido de encendedor",
+        "tribus":["Tryhards","Adicto","Petisos"]
     },
     {
         "name": "Dano",
@@ -107,7 +116,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "bueno",
         "es_gil": "no",
-        "lore": "maestro splinter"
+        "lore": "maestro splinter",
+        "tribus":["Autista","Casuales","Laucha"]
     },
     {
         "name": "Sighma",
@@ -118,7 +128,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "ilegal es poco"
+        "lore": "ilegal es poco",
+        "tribus":["Gymbro","Misogino","Malasos"]
     },
     {
         "name": "Agu",
@@ -129,7 +140,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "es buen loco"
+        "lore": "es buen loco",
+        "tribus":["Scammer","Tryhards","Gymbro"]
     },
     {
         "name": "Pani",
@@ -140,7 +152,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "se pinta las uñas y le entra a la prima"
+        "lore": "se pinta las uñas y le entra a la prima",
+        "tribus":["Cebollas","Tryhards","Malasos"]
     },
     {
         "name": "Dolla",
@@ -151,7 +164,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "chicito"
+        "lore": "chicito",
+        "tribus":["Termo","Petisos"]
     },
     {
         "name": "Chiru",
@@ -162,7 +176,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "tremendo autista"
+        "lore": "tremendo autista",
+        "tribus":["Autista","Roba-novias","Muertos"]
     },
     {
         "name": "Tito",
@@ -173,7 +188,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "casi muere"
+        "lore": "casi muere",
+        "tribus":["Termo","Misogino"]
     },
     {
         "name": "Dyrude",
@@ -184,7 +200,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "esta mimosho"
+        "lore": "esta mimosho",
+        "tribus":["Scammer","Cebollas","Casuales"]
     },
     {
         "name": "Pioox",
@@ -195,7 +212,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "le re cuesta"
+        "lore": "le re cuesta",
+        "tribus":["Tryhards"]
     },
     {
         "name": "Ficha",
@@ -206,7 +224,8 @@ const chicos = [
         "habilidad_lol": "bueno",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "acido"
+        "lore": "acido",
+        "tribus":["Adicto","Malasos"]
     },
     {
         "name": "Kevin recke",
@@ -217,7 +236,8 @@ const chicos = [
         "habilidad_lol": "average",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "fajaba a la jermu"
+        "lore": "fajaba a la jermu",
+        "tribus":["Muertos","Misogino"]
     },
     {
         "name": "Gmauro",
@@ -228,7 +248,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "average",
         "es_gil": "no",
-        "lore": "Le chorio el nickname a eri en el lol"
+        "lore": "Le chorio el nickname a eri en el lol",
+        "tribus":["Muertos"]
     },
     {
         "name": "Mosta",
@@ -239,7 +260,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "tartamudea cuando se pone nervioso"
+        "lore": "tartamudea cuando se pone nervioso",
+        "tribus":["Malasos","Gymbro","Casuales"]
     },
     {
         "name": "Nicuco",
@@ -250,7 +272,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "el terror de chicos y grandes"
+        "lore": "el terror de chicos y grandes",
+        "tribus":["Menores","Tryhards","Gymbro"]
     },
     {
         "name": "Wailler",
@@ -261,7 +284,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "si",
-        "lore": "no se calla nunca"
+        "lore": "no se calla nunca",
+        "tribus":["Termo","Gymbro","Casuales"]
     },
     {
         "name": "kIRAX",
@@ -272,7 +296,8 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "bueno",
         "es_gil": "si",
-        "lore": "es facho"
+        "lore": "es facho",
+        "tribus":["Tryhards","Muertos"]
     },
     {
         "name": "Fran",
@@ -283,7 +308,20 @@ const chicos = [
         "habilidad_lol": "malo",
         "habilidad_cs": "malo",
         "es_gil": "no",
-        "lore": "dejo los souls para dedicarse a su falcon verde"
+        "lore": "dejo los souls para dedicarse a su falcon verde",
+        "tribus":["Muertos","Malasos"]
+    },
+    {
+        "name": "Mono",
+        "region": "Mar del plata",
+        "trabaja": "si",
+        "pelo": "si",
+        "color_de_piel": "blanco",
+        "habilidad_lol": "malo",
+        "habilidad_cs": "malo",
+        "es_gil": "no",
+        "lore": "como se llama la partida",
+        "tribus":["Muertos","Malasos"]
     }
 ];
 
