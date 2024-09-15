@@ -2,7 +2,6 @@ import { chicos } from "./data.js";
 import { getElegidoParaFecha, verify, verifyList } from "./global.js"
 
 
-var ultima_row_dibujada  = "";
 var datatable;
 const elegido = getElegidoParaFecha(chicos, new Date());
 export var intentos_clasico = 0;
@@ -68,11 +67,8 @@ function initializeGuessTable() {
         ordering: false,
         paging: false,
         searching: false,
-        rowCallback: function(row, data, index) {
-            if (ultima_row_dibujada !== row) {
-                ultima_row_dibujada = row;
-                rowCallback(row, data, index);
-            }
+        createdRow: function(row, data, index, cells) {
+            rowCallback(row, data, index);
         }
     });
 }

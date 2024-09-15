@@ -3,7 +3,6 @@ import { frases_chicos } from "./data.js";
 
 
 var datatableFrase;
-var ultima_row_dibujada  = "";
 const elegido_frase = getElegidoParaFecha(frases_chicos, new Date(), 10)
 const frase_hoy = getElegidoParaFecha(elegido_frase['frases'], new Date(), 10)
 export var intentos_frase = 0;
@@ -60,11 +59,8 @@ function initializeGuessTableFrase() {
         ordering: false,
         paging: false,
         searching: false,
-        rowCallback: function(row, data, index) {
-            if (ultima_row_dibujada !== row) {
-                ultima_row_dibujada = row;
-                rowCallbackFrase(row, data, index);
-            }
+        createdRow: function(row, data, index) {
+            rowCallbackFrase(row, data, index);
         }
     });
 }

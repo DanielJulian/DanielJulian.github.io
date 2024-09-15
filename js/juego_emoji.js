@@ -48,7 +48,7 @@ function initializeGuessTableEmoji() {
         ordering: false,
         paging: false,
         searching: false,
-        rowCallback: function(row, data, index) {
+        createdRow: function(row, data, index) {
             if (ultima_row_dibujada !== row) {
                 ultima_row_dibujada = row;
                 rowCallbackEmoji(row, data, index);
