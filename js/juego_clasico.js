@@ -79,6 +79,7 @@ function initializeGuessTable() {
 
 function rowCallback(row, data, index) {
     intentos_clasico++;
+    console.log("asd")
 
     let nombre = data[0];
     let region = data[1];

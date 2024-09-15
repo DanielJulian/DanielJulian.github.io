@@ -60,17 +60,22 @@ export function verifyList(expected, actual, row, idx) {
 
 
 function checkAllGamesFinished() {
-    let allFinished = false;
     if ([clasico_finished, frase_finished, emoji_finished].every(Boolean)) { // If all are true
-        console.log(intentos_clasico);
-        console.log(intentos_frase);
-        console.log(intentos_emoji);
         clearInterval(intervalID);
+
+        $("#intentos_clasico").text(intentos_clasico);
+        $("#intentos_frase").text(intentos_frase);
+        $("#intentos_emoji").text(intentos_emoji);
+
+        $("#summaryModal").modal({backdrop: 'static', keyboard: false});
+        $("#summaryModal").modal('show');
     }
 }
 
 $(document).ready(function () {
-    $("#titulo").text(getElegidoParaFecha(titulos));
+    let titulo = getElegidoParaFecha(titulos);
+    $("#titulo").text(titulo);
+    $("#summaryModalTitle").text("Todos los modos del " + titulo.toLowerCase() + " completados:");
 
     intervalID = setInterval(() => checkAllGamesFinished(), 1000);
 })
