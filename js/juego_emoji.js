@@ -55,8 +55,9 @@ function rowCallbackEmoji(row, data, index) {
     if (!asserted) {
         intentos_emoji++;
         drawEmojis();
+    } else { // Si adivinó, dibujamos todos los emojis
+        drawEmojis(true);
     }
-
 }
 
 function addRowGuessEmoji(chico) {
@@ -73,19 +74,20 @@ function addRowGuessEmoji(chico) {
 
 function initializeEmojiGame() {
     var array_emojis = Array(elegido_emoji.icons.length).fill(question_mark);
-
-
     $("#emojis").text(array_emojis.join(' '))
 }
 
-function drawEmojis() {
+function drawEmojis(draw_all=false) {
     var array_emojis = Array(elegido_emoji.icons.length).fill(question_mark);
 
-    for (let i = 0; i <= intentos_emoji; i++) {
-        array_emojis[i] = elegido_emoji.icons[i]
+    if (draw_all) {
+        $("#emojis").text(elegido_emoji.icons.join(' '))
+    } else {
+        for (let i = 0; i <= intentos_emoji; i++) {
+            array_emojis[i] = elegido_emoji.icons[i]
+        }
+        $("#emojis").text(array_emojis.join(' '))
     }
-
-    $("#emojis").text(array_emojis.join(' '))
 }
 
 $(document).ready(function () {
