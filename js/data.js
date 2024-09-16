@@ -205,7 +205,7 @@ const chicos = [
     },
     {
         "name": "Pioox",
-        "region": "wilde",
+        "region": "avellaneda",
         "trabaja": "si",
         "pelo": "si",
         "color_de_piel": "blanco",
@@ -217,7 +217,7 @@ const chicos = [
     },
     {
         "name": "Ficha",
-        "region": "dominico",
+        "region": "avellaneda",
         "trabaja": "si",
         "pelo": "si",
         "color_de_piel": "blanco",
@@ -288,7 +288,7 @@ const chicos = [
         "tribus":["Termo","Gymbro","Casuales"]
     },
     {
-        "name": "kIRAX",
+        "name": "KiraX",
         "region": "wilde",
         "trabaja": "si",
         "pelo": "si",
