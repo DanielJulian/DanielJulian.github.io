@@ -98,7 +98,7 @@ const chicos = [
     {
         "name": "Nabu",
         "region": "san martin",
-        "trabaja": "si",
+        "trabaja": "no",
         "pelo": "si",
         "color_de_piel": "blanco",
         "habilidad_lol": "malo",
