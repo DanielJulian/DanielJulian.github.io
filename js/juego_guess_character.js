@@ -69,11 +69,13 @@ function initializeGuessTableCharacter() {
 
 
 function rowCallbackFrase(row, data, index) {
+    zoomOut()
     intentos_character++;
     let nombre = data[0];
     let asserted = verify(nombre, elegido_guess_character['name'], row, 0);
     if (asserted) {
         finished=true;
+        restoreZoom()
     }
 }
 
@@ -93,8 +95,6 @@ $(document).ready(function () {
     $("#foto_hoy").text(foto_hoy);
     $("#guess_character_foto").attr("src", "../assets/img/guess_character/" + foto_hoy);
 
-
-
     // Attach event listener to the button
     button.addEventListener("click", zoomOut);
 })
@@ -103,37 +103,37 @@ $(document).ready(function () {
 // Funcionalidad para zoom de la foto
 
 const image = document.getElementById("guess_character_foto");
-let zoomLevel = 3; // Initial zoom level
-let isZoomingOut = false;
+let zoomLevel = 7; // Initial zoom level
 
 // Function to zoom in at a random position
 function initializeZoom() {
-  const randomX = Math.random() * 100; // Random percentage for X origin
-  const randomY = Math.random() * 100; // Random percentage for Y origin
+  const values = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  const randomX = getElegidoParaFecha(values, new Date(), 10) * 100;
+  const randomY = getElegidoParaFecha(values, new Date(), 15) * 100;
 
   // Set transform origin to the random point
   image.style.transformOrigin = `${randomX}% ${randomY}%`;
 
   // Apply zoom
   image.style.transform = `scale(${zoomLevel})`;
+
+  $(".guess-image-container").show();
 }
 
 // Function to gradually zoom out
 function zoomOut() {
-  if (isZoomingOut || zoomLevel <= 1) return; // Prevent multiple clicks
+    if (zoomLevel <= 1) return; // Prevent multiple clicks
 
-  isZoomingOut = true;
-
-  const zoomOutInterval = setInterval(() => {
-    zoomLevel -= 0.1; // Decrease zoom level
+    zoomLevel -= 0.5; // Decrease zoom level
     image.style.transform = `scale(${zoomLevel.toFixed(1)})`;
 
     if (zoomLevel <= 1) {
-      clearInterval(zoomOutInterval); // Stop when fully zoomed out
       image.style.transform = "scale(1)";
-      isZoomingOut = false;
     }
-  }, 100); // Adjust the speed (in milliseconds)
+}
+
+function restoreZoom() {
+    image.style.transform = "scale(1)";
 }
 
 
