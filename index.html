@@ -27,6 +27,7 @@
     <script type="module" src="js/juego_clasico.js"></script>
     <script type="module" src="js/juego_frase.js"></script>
     <script type="module" src="js/juego_emoji.js"></script>
+    <script type="module" src="js/juego_guess_character.js"></script>
 
 </head>
 <body>
@@ -91,7 +92,7 @@
         <p style="color:white;">Cada intento desbloquea un emoji.</p>
 
         <input type="text" id="autocomplete_emoji" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
-        <div class="container mt-5" id="guesstable_emoji_parent">
+        <div class="container mt-3" id="guesstable_emoji_parent">
             <table id="guesstable_emoji" class="display" style="width:100%; display: none">
                 <thead>
                     <tr>
@@ -105,6 +106,29 @@
 
         <div class="container mt-5">
             <h4 id="emoji_de_ayer" style="color:white"></h4>
+        </div>
+    </div>
+
+    <div class="container mt-5" style="border: 0.2em solid #ffffff;">
+        <h4 style="color:white; margin-top: 1em;">¿Adivina el autista de la imagen?</h4>
+        <img id="guess_character_foto" style="width: 25em; height: 25em">
+        <p style="color:white;">Cada intento hace zoom out</p>
+
+        <input type="text" id="autocomplete_emoji" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
+        <div class="container mt-3" id="guesstable_emoji_parent">
+            <table id="guesstable_emoji" class="display" style="width:100%; display: none">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-5">
+            <h4 id="guess_character_foto_de_ayer" style="color:white"></h4>
         </div>
     </div>
 

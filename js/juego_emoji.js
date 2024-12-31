@@ -1,4 +1,4 @@
-import { emojis_chicos } from "./data.js"
+import {chicos, emojis_chicos} from "./data.js"
 import { getElegidoParaFecha, verify} from "./global.js"
 
 const question_mark = "❓";
@@ -99,9 +99,17 @@ function drawEmojis(draw_all=false) {
     }
 }
 
+function getEmojiDeAyer() {
+    var date = new Date();
+    date.setDate(date.getDate() - 1);
+    let elegidoAyer = getElegidoParaFecha(emojis_chicos, date)
+    return "El emoji de ayer fue " + elegidoAyer['name'] + " : " + elegidoAyer['icons'];
+}
+
 $(document).ready(function () {
     initializeAutocomplete();
     datatableEmoji = initializeGuessTableEmoji();
     initializeEmojiGame();
     drawEmojis();
+    $("#emoji_de_ayer").text(getEmojiDeAyer());
 })

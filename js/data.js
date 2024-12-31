@@ -515,8 +515,72 @@ const emojis_chicos = [
     }
 ]
 
+
+const guess_character_fotos = [
+    {
+        "name": "Agus",
+        "nombre_archivos":["1.png"]
+    },
+    {
+        "name": "Calippy",
+        "nombre_archivos":["2.png"]
+    },
+    {
+        "name": "Dano",
+        "nombre_archivos":["3.png"]
+    },
+    {
+        "name": "Eri",
+        "nombre_archivos":["4.png"]
+    },
+    {
+        "name": "Fede",
+        "nombre_archivos":["5.png","6.jpeg","7.png"]
+    },
+    {
+        "name": "Ficha",
+        "nombre_archivos":["8.jpeg"]
+    },
+    {
+        "name": "Ima",
+        "nombre_archivos":["9.jpg", "10.png"]
+    },
+    {
+        "name": "Juanma",
+        "nombre_archivos":["11.jpg"]
+    },
+    {
+        "name": "Kener",
+        "nombre_archivos":["12.png", "13.jpg"]
+    },
+    {
+        "name": "Nabu",
+        "nombre_archivos":["14.png", "15.png", "16.png", "17.jpg", "18.jpg", "19.png"]
+    },
+    {
+        "name": "Nicuco",
+        "nombre_archivos":["20.png"]
+    },
+    {
+        "name": "Pani",
+        "nombre_archivos":["21.png", "22.jpg", "23.jpeg"]
+    },
+    {
+        "name": "Sighma",
+        "nombre_archivos":["24.png"]
+    },
+    {
+        "name": "Tito",
+        "nombre_archivos":["25.JPG","26.png","27.png","28.png","29.png"]
+    },
+    {
+        "name": "Wailler",
+        "nombre_archivos":["30.png", "31.png"]
+    }
+];
+
 const titulos = ["Chicodle", "Councildle", "Sidle", "Mogolicodle", "Tpucdle"]
 
 export {
-  chicos, frases_chicos, emojis_chicos, titulos
+  chicos, frases_chicos, emojis_chicos, titulos, guess_character_fotos
 }
