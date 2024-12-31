@@ -1,0 +1,14 @@
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#guess_character_foto {
+  transition: transform 0.3s ease;
+}
+
+#autocomplete_guess_character {
+    width: 300px;
+    padding: 7px;
+    text-align: left;
+}

@@ -23,6 +23,7 @@
 
     <!-- JS y CSS de lo chico !-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/styles_guess_character.css" rel="stylesheet"/>
     <script type="module" src="js/global.js"></script>
     <script type="module" src="js/juego_clasico.js"></script>
     <script type="module" src="js/juego_frase.js"></script>
@@ -110,13 +111,15 @@
     </div>
 
     <div class="container mt-5" style="border: 0.2em solid #ffffff;">
-        <h4 style="color:white; margin-top: 1em;">¿Adivina el autista de la imagen?</h4>
-        <img id="guess_character_foto" style="width: 25em; height: 25em">
+        <h4 style="color:white; margin-top: 1em;">Adivina el autista de la imagen</h4>
+        <div class="image-container" style="border: 0.1em solid #ffffff;">
+            <img id="guess_character_foto" style="width: 25em; height: 25em">
+        </div>
         <p style="color:white;">Cada intento hace zoom out</p>
 
-        <input type="text" id="autocomplete_emoji" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
-        <div class="container mt-3" id="guesstable_emoji_parent">
-            <table id="guesstable_emoji" class="display" style="width:100%; display: none">
+        <input type="text" id="autocomplete_guess_character" placeholder="Ingresá un autista" style="border-radius: 0.5em; margin-top: 1em;"/>
+        <div class="container mt-3" id="guesstable_character_parent">
+            <table id="guesstable_character" class="display" style="width:100%; display: none">
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -130,6 +133,7 @@
         <div class="container mt-5">
             <h4 id="guess_character_foto_de_ayer" style="color:white"></h4>
         </div>
+         <button id="zoomOutButton">Zoom Out</button>
     </div>
 
 
@@ -145,6 +149,7 @@
             <p style="margin:0">Clásico: <span id="intentos_clasico"></span></p>
             <p style="margin:0">Frase: <span id="intentos_frase"></span></p>
             <p style="margin:0">Emoji: <span id="intentos_emoji"></span></p>
+            <p style="margin:0">Foto: <span id="intentos_foto"></span></p>
           </div>
         </div>
       </div>

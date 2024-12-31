@@ -2,6 +2,7 @@ import { titulos } from "./data.js";
 import { intentos_clasico, finished as clasico_finished } from "./juego_clasico.js";
 import { intentos_frase, finished as frase_finished } from "./juego_frase.js";
 import { intentos_emoji, finished as emoji_finished } from "./juego_emoji.js";
+import { intentos_character, finished as character_finished } from "./juego_guess_character.js";
 
 var intervalID = 0;
 
@@ -60,12 +61,14 @@ export function verifyList(expected, actual, row, idx) {
 
 
 function checkAllGamesFinished() {
-    if ([clasico_finished, frase_finished, emoji_finished].every(Boolean)) { // If all are true
+    if ([clasico_finished, frase_finished, emoji_finished, character_finished].every(Boolean)) { // If all are true
         clearInterval(intervalID);
 
         $("#intentos_clasico").text(intentos_clasico);
         $("#intentos_frase").text(intentos_frase);
         $("#intentos_emoji").text(intentos_emoji);
+        $("#intentos_foto").text(intentos_character);
+
 
         $("#summaryModal").modal({backdrop: 'static', keyboard: false});
         $("#summaryModal").modal('show');
